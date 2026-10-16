@@ -1,0 +1,21 @@
+{
+  "name": "confine-reale-immaginario",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test",
+    "build:music": "node scripts/build-music-parser.mjs",
+    "check": "node --check server.mjs && node --check music-library.mjs && node --check public/app.js && node --check public/chapters.js && node --check public/scenes.js && node --check public/intro.js && node --check public/polyhedron.js && node --check public/loading.js && node --check public/star-drift.js && node --check public/title.js && node --check public/music.js && node --check public/music-defaults.js && node --check public/music-metadata.js && node --check public/music-lyrics.js && node --check public/start-gate.js && node --check public/content.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "music-metadata": "^12.2.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
